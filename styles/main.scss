@@ -1,0 +1,81 @@
+/******
+Imports
+******/
+
+@import 'bourbon/bourbon';
+@import 'neat/neat';
+
+/******
+Fonts
+******/
+
+/******
+Colors
+******/
+
+$primary-color:#75915c;
+$secondary-color: #53a5d3;
+
+/******
+Layout
+******/
+
+$calculator-width: 12em;
+$calculator-height: 20em;
+
+$result-width: 100%;
+$result-height: 3em;
+
+$button-width: 3em;
+$button-height: 3em;
+
+/******
+Content
+******/
+body {
+  background-color: #518e40;
+}
+
+.calculator {
+  margin: auto;
+  margin-top: 6em;
+  width: $calculator-width;
+  height: $calculator-height;
+  text-align: right;
+
+
+}
+
+.result {
+  display: block;
+  margin: 0;
+  margin-bottom: 5px;
+  border: solid white 2px;
+  background-color: $primary-color;
+  padding-top: 1em;
+  padding-right: 1em;
+  width: $result-width;
+  height: $result-height;
+  color: white;
+}
+
+button {
+  margin: 0;
+  outline: none;
+  width: $button-width;
+  height: $button-height;
+  color: white;
+  font-size: 16px;
+}
+
+.number-button {
+  background-color: $primary-color;
+}
+
+.function-button {
+  background-color: $secondary-color;
+}
+
+.clear-button {
+  background-color: #fa9955;
+}
